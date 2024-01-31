@@ -1,0 +1,12 @@
+ Stop and wait protocol used to send 10 messages 
+ **RUN BOTH sender.cpp and recepient.cpp simultaneously**
+
+It helps flow control by::
+1.As it ensures that the message delivered by the sender receives the recepient hence a flow control is maintained
+**IN OUR PROGRAM ,I'M SENDING 10 MESSAGES;AND IMPLEMENTING SOMETHING SIMILAR TO RDT -3.0  **
+	1.IN THE THIRD MESSAGE THE ACK IS LOST SO A RETRANSMISSION OCCRUS 
+	2.INSTEAD OF SENDING AN INTEGER IN THE 6TH MESSAGE(HERE WORKING OF CHECKSUM IS MIMICKED BY CHECKING WHETHER THE MESSAGE IS AN INT OR NOT) I SENT A "?" 
+	3.AND TO SIMULATE DELAYED ACK,I'M FORCING A TIMEOUT AT THE 7TH MESSAGE
+**THUS ALL 3 CASES OF CONCERN ARE TAKEN CARE HERE**
+
+
